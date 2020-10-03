@@ -1,0 +1,25 @@
+<settings>
+
+
+    <servers>
+        <server>
+            <id>ossrh</id>
+            <username>your_jira_username</username>
+            <password>your_jira_password_for_sonatype</password>
+        </server>
+    </servers>
+
+
+    <profiles>
+        <profile>
+            <id>ossrh</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <gpg.executable>gpg</gpg.executable>
+                <gpg.passphrase>insert your gpg passphrase</gpg.passphrase>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
